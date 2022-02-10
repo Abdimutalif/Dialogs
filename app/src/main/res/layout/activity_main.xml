@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/alertbtn"
+        android:backgroundTint="#FB0318"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/alert_list_btn"
+        android:text="Alert Dialog" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/alert_list_btn"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/alertbtn"
+        app:layout_constraintBottom_toTopOf="@id/alert_listsingle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog with list"/>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/alert_listsingle_btn"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/alert_list_btn"
+        app:layout_constraintBottom_toTopOf="@id/alert_custom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Single Dialog with List" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/alert_custom_btn"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/alert_listsingle_btn"
+        app:layout_constraintBottom_toTopOf="@id/alert_list_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/alert_list_btn2"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/alert_custom_btn"
+        app:layout_constraintBottom_toTopOf="@id/date_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment Dialog" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/date_btn"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/alert_list_btn2"
+        app:layout_constraintBottom_toTopOf="@id/time_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DataPicker Dialog" />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/time_btn"
+        android:backgroundTint="#FB0318"
+        app:layout_constraintTop_toBottomOf="@id/date_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Picker Dialog"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
